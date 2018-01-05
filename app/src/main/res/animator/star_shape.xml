@@ -1,0 +1,18 @@
+<set xmlns:android="http://schemas.android.com/apk/res/android"
+    android:interpolator="@android:anim/accelerate_interpolator"
+    android:ordering="sequentially"
+    android:shareInterpolator="true">
+    <!-- 如果俩个SVG进行动画，则俩个节点需要一zhi -->
+    <objectAnimator
+        android:duration="500"
+        android:propertyName="pathData"
+        android:valueFrom="@string/svgStarStr"
+        android:valueTo="@string/svgFoodStr"
+        android:valueType="pathType" />
+    <objectAnimator
+        android:duration="500"
+        android:propertyName="pathData"
+        android:valueFrom="@string/svgFoodStr"
+        android:valueTo="@string/svgStarStr"
+        android:valueType="pathType" />
+</set>
